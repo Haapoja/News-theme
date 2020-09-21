@@ -1,0 +1,27 @@
+/*breakpoints*/
+$break-small:400px;
+$break-medium:767px;
+$break-lage:1200px;
+
+body{
+    background-color:black;
+    font-size:300px;
+}
+header{
+    margin-bottom:65px!important;
+}
+.post{
+    flex: 0 0 50%;
+    max-width:50%;
+    @media (min-width:$break-small) and (max-width:$break-lage) {
+        flex:0 0 100%!important;
+        max-width:100%!important;
+    }
+    
+}
+.single-article{
+    margin-top:100px;
+    h2{
+        text-align: center;
+    }
+}
