@@ -26,4 +26,25 @@ if (!is_admin()) {
     add_filter('pre_get_posts','wpb_search_filter');
     }
 
+//shows current template file for debugging/testing
+
+    function meks_which_template_is_loaded() {
+        if ( is_super_admin() ) {
+            global $template;
+            print_r( $template );
+        }
+    }
+     
+    add_action( 'wp_footer', 'meks_which_template_is_loaded' );
+
+//custom function for checking is page is a child, used for my awful, terrible, abomination of a a header
+    function is_child($pageID) { 
+        global $post; 
+        if( is_page() && ($post->post_parent==$pageID) ) {
+                   return true;
+        } else { 
+                   return false; 
+        }
+    }
+
 ?>
