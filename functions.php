@@ -37,7 +37,7 @@ if (!is_admin()) {
      
     add_action( 'wp_footer', 'meks_which_template_is_loaded' );
 
-//custom function for checking is page is a child, used for my awful, terrible, abomination of a a header
+//custom function for checking if page is a child, used for my awful, terrible, abomination of a header
     function is_child($pageID) { 
         global $post; 
         if( is_page() && ($post->post_parent==$pageID) ) {

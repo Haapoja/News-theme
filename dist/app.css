@@ -1,7 +1,8 @@
 /*breakpoints*/
 
 body {
-  background-color: black;
+  background: #c8ebff;
+  background: linear-gradient(90deg, #c8ebff 0%, white 50%, #c8ebff 100%);
   font-size: 300px;
 }
 
@@ -9,9 +10,32 @@ header {
   margin-bottom: 65px !important;
 }
 
+header nav {
+  background-color: #8acaee;
+}
+
 .post {
   flex: 0 0 50%;
   max-width: 50%;
+}
+
+.post .img-container {
+  text-align: center;
+}
+
+.post a {
+  text-align: initial;
+  color: black;
+}
+
+@media (min-width: 400px) and (max-width: 1200px) {
+  .post a {
+    text-align: center;
+  }
+}
+
+.post a:hover {
+  color: black;
 }
 
 @media (min-width: 400px) and (max-width: 1200px) {
@@ -21,11 +45,29 @@ header {
   }
 }
 
+.post p {
+  font-size: initial;
+}
+
+@media (min-width: 400px) and (max-width: 1200px) {
+  .post p {
+    font-size: 2rem !important;
+  }
+}
+
 .single-article {
   margin-top: 100px;
 }
 
 .single-article h2 {
   text-align: center;
+}
+
+footer {
+  background-color: #8acaee;
+}
+
+footer a {
+  color: black;
 }
 

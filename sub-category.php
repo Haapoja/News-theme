@@ -1,5 +1,7 @@
 <?php /* Template Name: sub-category */ ?>
+<!-- May god have mercy on my soul -->
 <?php get_header()?>
+<!-- Asia -->
 <?php if(is_page("asia")) : ?>
 
     <div class="container">
@@ -31,7 +33,7 @@ endif;
 ?>
 </div>
 </div>   
-
+<!-- Europe -->
 <?php elseif(is_page("europe")) : ?>
     <div class="container">
 <div class="row">
@@ -62,7 +64,7 @@ endif;
 ?>
 </div>
 </div>
-
+<!-- Middle East -->
 <?php elseif(is_page("middle-east")) : ?>
     <div class="container">
 <div class="row">
@@ -93,7 +95,7 @@ endif;
 ?>
 </div>
 </div>  
-
+<!-- Africa -->
 <?php elseif(is_page("africa")) : ?>
     <div class="container">
 <div class="row">
@@ -124,7 +126,7 @@ endif;
 ?>
 </div>
 </div>  
-
+<!-- Space -->
 <?php elseif(is_page("space")) : ?>
     <div class="container">
 <div class="row">
@@ -155,7 +157,7 @@ endif;
 ?>
 </div>
 </div>  
-
+<!-- programming -->
 <?php elseif(is_page("programming")) : ?>
     <div class="container">
 <div class="row">
@@ -186,7 +188,7 @@ endif;
 ?>
 </div>
 </div>  
-
+<!-- Global Warming -->
 <?php elseif(is_page("global-warming")) : ?>
     <div class="container">
 <div class="row">
@@ -217,7 +219,7 @@ endif;
 ?>
 </div>
 </div>  
-
+<!-- Biology -->
 <?php elseif(is_page("biology")) : ?>
     <div class="container">
 <div class="row">
@@ -248,7 +250,7 @@ endif;
 ?>
 </div>
 </div>  
-
+<!-- Economy -->
 <?php elseif(is_page("economy")) : ?>
     <div class="container">
 <div class="row">
@@ -279,7 +281,7 @@ endif;
 ?>
 </div>
 </div>  
-
+<!-- Stonks -->
 <?php elseif(is_page("stocks")) : ?>
     <div class="container">
 <div class="row">
@@ -310,7 +312,7 @@ endif;
 ?>
 </div>
 </div>  
-
+<!-- tech -->
 <?php elseif(is_page("tech")) : ?>
     <div class="container">
 <div class="row">
@@ -341,7 +343,7 @@ endif;
 ?>
 </div>
 </div>  
-
+<!-- election -->
 <?php elseif(is_page("election")) : ?>
     <div class="container">
 <div class="row">
@@ -372,7 +374,7 @@ endif;
 ?>
 </div>
 </div>  
-
+<!-- Corona -->
 <?php elseif(is_page("corona")) : ?>
     <div class="container">
 <div class="row">
@@ -403,7 +405,7 @@ endif;
 ?>
 </div>
 </div>  
-
+<!-- lifestyle -->
 <?php elseif(is_page("lifestyle")) : ?>
     <div class="container">
 <div class="row">
@@ -434,7 +436,7 @@ endif;
 ?>
 </div>
 </div>  
-
+<!-- personal finance -->
 <?php elseif(is_page("personal-finance")) : ?>
     <div class="container">
 <div class="row">

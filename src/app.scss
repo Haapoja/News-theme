@@ -4,18 +4,42 @@ $break-medium:767px;
 $break-lage:1200px;
 
 body{
-    background-color:black;
+    background: rgb(200,235,255);
+    background: linear-gradient(90deg, rgba(200,235,255,1) 0%, rgba(255,255,255,1) 50%, rgba(200,235,255,1) 100%);
     font-size:300px;
+ 
 }
 header{
     margin-bottom:65px!important;
+   nav{
+       background-color:#8acaee;
+   }
 }
 .post{
     flex: 0 0 50%;
     max-width:50%;
+  .img-container{
+      text-align: center;
+  }
+    a{
+        text-align: initial;
+        color:black;
+        @media (min-width:$break-small) and (max-width:$break-lage) {
+            text-align: center;
+        }
+    }
+    a:hover{
+        color:black;
+    }
     @media (min-width:$break-small) and (max-width:$break-lage) {
         flex:0 0 100%!important;
         max-width:100%!important;
+    }
+    p{
+        font-size: initial;
+        @media (min-width:$break-small) and (max-width:$break-lage) {
+            font-size:2rem!important;
+        }
     }
     
 }
@@ -23,5 +47,11 @@ header{
     margin-top:100px;
     h2{
         text-align: center;
+    }
+}
+footer{
+    background-color:#8acaee;
+    a{
+        color:black;
     }
 }
