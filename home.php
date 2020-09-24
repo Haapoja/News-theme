@@ -2,11 +2,19 @@
 
 <div class="container">
     <div class="row">
-        <?php 
-
-while(have_posts()){
-    the_post(); ?>
-
+        <?php
+$args = array(
+    'post_type' => 'post',
+    'post_status' => 'publish',
+    'posts_per_page' => -1,
+);
+$arr_posts = new WP_Query( $args );
+ 
+if ( $arr_posts->have_posts() ) :
+ 
+    while ( $arr_posts->have_posts() ) :
+        $arr_posts->the_post();
+        ?>
         <div class="post col-4">
             <a href="<?php the_permalink(); ?>">
                 <h1><?php the_title(); ?></h1>
@@ -17,10 +25,12 @@ while(have_posts()){
             <p><?php the_excerpt (); ?> </p>
 
         </div>
-        <?php }?>
-
+        </article>
+        <?php
+    endwhile;
+endif;
+?>
     </div>
-
 </div>
 <?php
  get_footer();?>
