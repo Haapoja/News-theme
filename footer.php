@@ -58,16 +58,16 @@
 
         <ul class="list-unstyled">
           <li>
-            <a href="#!">Link 1</a>
+            <a href="#!"><i class="fa fa-facebook-f"></i></a>
           </li>
           <li>
-            <a href="#!">Link 2</a>
+            <a href="#!"><i class="fa fa-instagram"></i></a>
           </li>
           <li>
-            <a href="#!">Link 3</a>
+            <a href="#!"><i class="fa fa-twitter"></i></a>
           </li>
           <li>
-            <a href="#!">Link 4</a>
+            <a href="#!"><i class="fa fa-snapchat"></i></a>
           </li>
         </ul>
 
