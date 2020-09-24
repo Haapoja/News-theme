@@ -27,7 +27,9 @@ if ( $arr_posts->have_posts() ) :
             <a href="<?php the_permalink(); ?>">
                 <h1><?php the_title(); ?></h1>
             </a>
+            <div class="img-container">
             <?php the_post_thumbnail(); ?>
+            </div>
             <p><?php the_excerpt(); ?> </p>
 
         </div>
